@@ -15,11 +15,9 @@ app.use(cors());
 app.use(express.json());
 
 //connect db
-require("./db/connection")
+ require("./db/connection")
 
-
-//mongoose.connect("mongodb://localhost:27017/mern-stack")
-
+ //url for testing purposes only
 app.get("/", (req,res)=>{
     res.send("Hello World!")
 })
